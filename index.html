@@ -1,0 +1,61 @@
+html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biblioteca do Afrocódigos</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 class="heading">Biblioteca do Afrocódigos</h1>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2 class="card-heading">Alugar Livro</h2>
+        <form id="alugarLivroForm" class="form" title="Formulário de Aluguel de Livro">
+          <div class="form-group">
+            <label for="livro" class="form-label">Livro:</label>
+            <select id="livro" name="livro" class="form-select">
+              <!-- Opções de livros serão adicionadas dinamicamente aqui -->
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="matricula" class="form-label">Matrícula:</label>
+            <input type="text" id="matricula" name="matricula" class="form-input" required>
+          </div>
+
+          <div class="form-group">
+            <label for="senha" class="form-label">Senha:</label>
+            <input type="password" id="senha" name="senha" class="form-input" required>
+          </div>
+
+          <button type="submit" class="btn">Alugar Livro</button>
+        </form>
+      </section>
+
+      <section class="card">
+        <h2 class="card-heading">Livros Disponíveis</h2>
+        <ul id="livrosDisponiveis" class="list"></ul>
+      </section>
+
+      <section class="card">
+        <h2 class="card-heading">Empréstimos Ativos</h2>
+        <ul id="emprestimosAtivos" class="list"></ul>
+      </section>
+    </main>
+  </div>
+
+  <script src="dist/index.js"></script>
+  <script src="dist/biblioteca.js"></script>
+  <script src="dist/emprestimo.js"></script>
+  <script src="dist/livro.js"></script>
+  <script src="dist/usuario.js"></script>
+  <script src="dist/aluno.js"></script>
+</body>
+</html>

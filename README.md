@@ -1,2 +1,1 @@
-# TS-JS-projetoguiadoII
-projeto-guiado-typescript
+# TF-JS-Projeto-Guiado-II
